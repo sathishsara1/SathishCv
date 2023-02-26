@@ -1,39 +1,54 @@
-.body{
-    background-color: #4cc4cf;
-}
-.port{
-    width: 4%;
-    height: 4%;
-    float: left;
-    margin-right: 10px;
+body{
+    background-color: aquamarine;
 }
 .portfolio{
     color: blueviolet;
-    font-size: xx-large;
+    font-size: xx-small;
     font-family: 'Pacifico', cursive;
+    padding-left: 2%;
+    font-size: xx-large;
+    display: inline;
+    margin-top: 1%;
+}
+.port{
+    width: 10%;
+    height: 10%;
+    float: left;
+    margin-top: 4%;
+}
+.ports{
+    width: 30%;
+    height: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 .home{
-    position:absolute;
-    top: 5%;
+    position: absolute;
     right: 45%;
+    top: 35px;
 }
 .skills{
     position: absolute;
-    top: 5%;
-    right: 39% ;
+    right: 36.8% ;
+    top: 35px;
 }
 .certifications{
     position: absolute;
-    top: 5%;
-    right: 29.5% ;
+    right: 24% ;
+    top: 35px;
 }
 .projects{
     position: absolute;
-    top: 5%;
-    right: 22.5% ;
+    right: 13.5% ;
+    top: 35px;
 }
 .about{
     position: absolute;
-    top: 5%;
-    right: 16.5% ;
+    right: 5.3% ;
+    top: 35px;
+}
+.resources{
+    font-family: 'Tilt Prism', cursive;
+    font-weight: bold;
+    font-size: 1em;
 }
