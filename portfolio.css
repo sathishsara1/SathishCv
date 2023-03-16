@@ -7,15 +7,8 @@ body{
     padding-left: 15%;
     text-decoration: none;
     font-size: xx-large;
-    /* display: inline; */
     margin-top: 3%;
 }
-/* .port{
-    width: 11%;
-    height: 11%;
-    float: left;
-    margin-top: 4%;
-} */
 .ports{
     width: 30%;
     height: 30%;
@@ -27,22 +20,27 @@ body{
 }
 .home{
     position: absolute;
-    right: 45%;
+    right: 48%;
     top: 35px;
 }
 .skills{
     position: absolute;
-    right: 34% ;
+    right: 40% ;
     top: 35px;
 }
 .projects{
     position: absolute;
-    right: 20.5% ;
+    right: 30.5% ;
+    top: 35px;
+}
+.resource{
+    position: absolute;
+    right: 19.3% ;
     top: 35px;
 }
 .about{
     position: absolute;
-    right: 9.3% ;
+    right: 10.3% ;
     top: 35px;
 }
 .resources{
@@ -61,6 +59,11 @@ body{
     animation: func 10s;
 }
 .projects:hover{
+    opacity: 80%;
+    font-size: larger;
+    animation: func 10s;
+}
+.resource:hover{
     opacity: 80%;
     font-size: larger;
     animation: func 10s;
@@ -90,7 +93,6 @@ body{
     margin-bottom: auto;
     height: fit-content;
     width: fit-content;
-
 }
 .insta{
     margin-bottom: calc(5vw);
@@ -193,7 +195,57 @@ body{
 }
 @media (max-width:1024px){
     .portfolio{
-        font-size: 1.1rem;
+        font-size: calc(4vw);
+        padding-top: 15%;
+    }
+    .home{
+        position: absolute;
+        right: 41%;
+    }
+    .skills{
+        position: absolute;
+        right: 28% ;
+    }
+    .projects{
+        position: absolute;
+        right: -6% ;
+    }
+    .about{
+        position: absolute;
+        right: -15% ;
+    }
+    .resource{
+        position: absolute;
+        right: 9.3% ;
+    }
+    .resources{
+        font-size: calc(2vw);
+        top: 33px;
+    }
+    .socialmedia{
+        right: calc(-10vw);
+    }
+    .iam{
+        position: absolute;
+        top: calc(1vh);
+        font-family: 'Parisienne', cursive;
+    }
+    .svss{
+        font-size: 3rem;
+        position: absolute;
+        top: calc(15vh);
+        left: calc(-5vw);
+    }
+    .footer{
+        font-size: 0.5rem;
+        position: absolute;
+        left: 8%;
+        right: 0;
+        bottom: -15%;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+        width: fit-content;
     }
 }
 a{
