@@ -160,35 +160,6 @@ body{
 .mail:hover{
     opacity: 70%;
 }
-.name{
-    font-size: 5rem;
-    position: absolute;
-    top: 30%;
-    z-index: 2;
-    left: 20%;
-    display: flex;
-    flex-direction: column;
-}
-.iam{
-    position: absolute;
-    top: calc(1vh);
-    font-family: 'Parisienne', cursive;
-}
-.svss{
-    position: absolute;
-    top: calc(15vh);
-    left: calc(1vw);
-}
-.svs{
-    font-size: 3rem;
-    margin-bottom: -5%;
-    font-family: 'Dancing Script', cursive;
-}
-.sathish{
-    margin-left: 11%;
-    font-weight: bolder;
-    font-family: 'Dancing Script', cursive;
-}
 .footer{
     font-size: 0.5rem;
     position: absolute;
@@ -221,17 +192,6 @@ body{
     }
     .socialmedia{
         right: 2%;
-    }
-    .iam{
-        position: absolute;
-        top: calc(1vh);
-        font-family: 'Parisienne', cursive;
-    }
-    .svss{
-        font-size: 3rem;
-        position: absolute;
-        top: calc(15vh);
-        left: calc(-5vw);
     }
     .footer{
         font-size: 0.5rem;
