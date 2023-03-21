@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#navchild-home{
+    position: absolute;
+    top: 5%;
+    right: 42%;
+}
+#navchild-skills{
+    position: absolute;
+    top: 5%;
+    right: 34%;
+}
+#navchild-resources{
+    position: absolute;
+    top: 5%;
+    right: 23.5%;
+}
+#navchild-projects{
+    position: absolute;
+    top: 5%;
+    right: 14%;
+}#navchild-about{
+    position: absolute;
+    top: 5%;
+    right: 6%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#s-c{
+    position: absolute;
+    width: calc(14vw);
+    height: calc(14vw);
+    background-color: #576F72;
+    border-radius: calc(10vw);
+    z-index: 4;
+}
+#m-c{
+    z-index: 3;
+    position: absolute;
+    width: calc(23vw);
+    height: calc(23vw);
+    background-color:#7D9D9C;
+    border-radius: calc(14vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#l-c{
+    z-index: 2;
+    position: relative;
+    width: calc(30vw);
+    height: calc(30vw);
+    background-color: #3F4E4F;
+    border-radius: calc(18vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: calc(-9vw);
+    top: calc(-9vw);
+}
+@media (max-width:1024px){
+    .navbar{
+        font-size: calc(2.5vw);
+    }
+    #navchild-home{
+        position: absolute;
+        right: 47.5%;
+    }
+    #navchild-skills{
+        position: absolute;
+        right: 38.5%;
+    }
+    #navchild-resources{
+        position: absolute;
+        right: 25%;
+    }
+}
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    border-spacing: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: fit-content;
+    width: fit-content;
+}
+.insta{
+    margin-bottom: calc(5vw);
+    margin-top: calc(5vw);
+}
+.linkedin{
+    margin-bottom: calc(5vw);
+}
+.github{
+    margin-bottom: calc(5vw);
+}
+.insta:hover{
+    opacity: 70%;
+}
+.linkedin:hover{
+    opacity: 70%;
+}
+.github:hover{
+    opacity: 70%;
+}
+.mail:hover{
+    opacity: 70%;
+}
+@media (max-width: 1024px){
+    .socialmedia{
+        right: 2%;
+    }
+}
