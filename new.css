@@ -104,14 +104,24 @@ a{
     width: fit-content;
 }
 .insta{
-    margin-bottom: calc(5vw);
+    width: 25px;
+    height: 25px;
+    margin-bottom: calc(6vw);
     margin-top: calc(5vw);
 }
 .linkedin{
-    margin-bottom: calc(5vw);
+    width: 25px;
+    height: 25px;
+    margin-bottom: calc(6vw);
 }
 .github{
-    margin-bottom: calc(5vw);
+    width: 25px;
+    height: 25px;
+    margin-bottom: calc(6vw);
+}
+.mail{
+    width: 25px;
+    height: 25px;
 }
 .insta:hover{
     opacity: 70%;

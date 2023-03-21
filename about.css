@@ -3,118 +3,44 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color:#A0BCC2;
-}
-.portfolio{
-    color: #251B37;
-    font-family: 'Kaushan Script', cursive;
-    padding-left: 15%;
-    text-decoration: none;
-    font-size: xx-large;
-    margin-top: 3%;
-}
-.ports{
-    width: 30%;
-    height: 30%;
-    margin-left: 2%;
-    margin-top: 2%;
-    position: absolute;
-    top: 0;
-    z-index: 7;
-}
-@media (min-width:1025px) {
-    .home{
-        position: absolute;
-        right: 48%;
-        top: 35px;
-    }
-    .skills{
-        position: absolute;
-        right: 40% ;
-        top: 35px;
-    }
-    .projects{
-        position: absolute;
-        right: 30.5% ;
-        top: 35px;
-    }
-    .resource{
-        position: absolute;
-        right: 19.3% ;
-        top: 35px;
-    }
-    .about{
-        position: absolute;
-        right: 10.3% ;
-        top: 35px;
-    }
-}
-.resources{
-    font-family: 'Tilt Prism', cursive;
-    font-weight: bold;
-    font-size: 1em;
-}
-.home:hover{
-    opacity: 80%;
-    font-size: larger;
-    animation: func 10s;
-}
-.skills:hover{
-    opacity: 80%;
-    font-size: larger;
-    animation: func 10s;
-}
-.projects:hover{
-    opacity: 80%;
-    font-size: larger;
-    animation: func 10s;
-}
-.resource:hover{
-    opacity: 80%;
-    font-size: larger;
-    animation: func 10s;
-}
-.about:hover{
-    opacity: 80%;
-    font-size: larger;
-    animation: func 10s;
-}
-@keyframes func{
-    0%{
-        text-decoration: underline;
-    }
-    100%{
-        text-decoration: underline;
-    }
-}
-.socialmedia{
+.navbar{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.1em;
     display: flex;
-    flex-direction: column;
-    border-spacing: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#navchild-home{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: fit-content;
-    width: fit-content;
+    top: 5%;
+    right: 42%;
 }
-.insta{
-    margin-bottom: calc(5vw);
-    margin-top: calc(5vw);
+#navchild-skills{
+    position: absolute;
+    top: 5%;
+    right: 34%;
 }
-.linkedin{
-    margin-bottom: calc(5vw);
+#navchild-resources{
+    position: absolute;
+    top: 5%;
+    right: 23.5%;
 }
-.github{
-    margin-bottom: calc(5vw);
+#navchild-projects{
+    position: absolute;
+    top: 5%;
+    right: 14%;
 }
-#design{
-    width: fit-content;
-    height: fit-content;
-    position: relative;
+#navchild-about{
+    position: absolute;
+    top: 5%;
+    right: 6%;
+}
+a{
+    color: black;
+    text-decoration: none;
 }
 #s-c{
     position: absolute;
@@ -148,6 +74,56 @@ body{
     left: calc(-9vw);
     top: calc(-9vw);
 }
+@media (max-width:1024px){
+    .navbar{
+        font-size: calc(2.5vw);
+    }
+    #navchild-home{
+        position: absolute;
+        right: 47.5%;
+    }
+    #navchild-skills{
+        position: absolute;
+        right: 38.5%;
+    }
+    #navchild-resources{
+        position: absolute;
+        right: 25%;
+    }
+}
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    border-spacing: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: fit-content;
+    width: fit-content;
+}
+.insta{
+    width: 25px;
+    height: 25px;
+    margin-bottom: calc(6vw);
+    margin-top: calc(5vw);
+}
+.linkedin{
+    width: 25px;
+    height: 25px;
+    margin-bottom: calc(6vw);
+}
+.github{
+    width: 25px;
+    height: 25px;
+    margin-bottom: calc(6vw);
+}
+.mail{
+    width: 25px;
+    height: 25px;
+}
 .insta:hover{
     opacity: 70%;
 }
@@ -160,52 +136,33 @@ body{
 .mail:hover{
     opacity: 70%;
 }
-.footer{
-    font-size: 0.5rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    height: fit-content;
-    width: fit-content;
-    opacity: 70%;
-}
-@media (max-width:1024px){
-    .portfolio{
-        font-size: calc(4vw);
-        padding-top: 15%;
-    }
-    .resources{
-        width: calc(55vw);
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: absolute;
-        top: 4%;
-        right: 1%;
-    }
-    .resources a{
-        font-size: calc(2vw);
-    }
+@media (max-width: 1024px){
     .socialmedia{
         right: 2%;
     }
-    .footer{
-        font-size: 0.5rem;
-        position: absolute;
-        left: 8%;
-        right: 0;
-        bottom: 2%;
-        margin-left: auto;
-        margin-right: auto;
-        height: fit-content;
-        width: fit-content;
-    }
 }
-a{
-    text-decoration: none;
-    color: black;
+.skills{
+    width: calc(23vw);
+    height: calc(10vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #576F72;
+}
+.hobbies{
+    background-color: aquamarine;
+    margin-right: 10px;
+}
+.education{
+    background-color: brown;
+    margin-right: 10px;
+}
+.favourites{
+    background-color: chartreuse;
+    margin-right: 10px;
+}
+.about{
+    background-color: cornflowerblue;
 }
