@@ -201,6 +201,11 @@ a{
     top: calc(4vw);
     left: calc(26.5vw);
     border-radius: 10%;
+    opacity: 0;
+    transition: all 500ms;
+}
+.hobbies:hover + .hobbies1{
+    opacity: 1.0;
 }
 @media (max-width: 1024px){
     .skills{
@@ -259,5 +264,14 @@ a{
         align-items: center;
         background-color: white;
         margin-right: 0px;
+    }
+    .hobbies1{
+        width: calc(13vw);
+        height: calc(13vw);
+        background-color: black;
+        position: absolute;
+        top: calc(4vw);
+        left: calc(26.5vw);
+        border-radius: 10%;
     }
 }
