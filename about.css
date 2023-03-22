@@ -194,84 +194,114 @@ a{
     margin-right: 20px;
 }
 .hobbies1{
-    width: calc(13vw);
-    height: calc(13vw);
+    width: calc(15vw);
+    height: calc(15vw);
     background-color: black;
     position: absolute;
-    top: calc(4vw);
-    left: calc(26.5vw);
+    top: calc(-15vw);
+    left: calc(6.0vw);
     border-radius: 10%;
     opacity: 0;
     transition: all 500ms;
 }
-.hobbies:hover + .hobbies1{
-    opacity: 1.0;
+.education1{
+    width: calc(15vw);
+    height: calc(15vw);
+    background-color: blueviolet;
+    position: absolute;
+    top: calc(13vw);
+    left: calc(17.0vw);
+    border-radius: 10%;
+    z-index: 2;
+    opacity: 0%;
+    transition: all 500ms;
+}
+.favourites1{
+    width: calc(15vw);
+    height: calc(15vw);
+    background-color: brown;
+    position: absolute;
+    top: calc(-15vw);
+    left: calc(30.0vw);
+    border-radius: 10%;
+    opacity: 0%;
+    transition: all 500ms;
+}
+.about1{
+    width: calc(15vw);
+    height: calc(15vw);
+    background-color: chartreuse;
+    position: absolute;
+    top: calc(13vw);
+    left: calc(41.0vw);
+    border-radius: 10%;
+    opacity: 0%;
+    transition: all 500ms;
+}
+.hobbies:hover .hobbies1{
+    opacity: 100%;
+}
+.hobbies1:hover{
+    display: none;
+}
+.education:hover .education1{
+    opacity: 100%;
+}
+.education1:hover{
+    display: none;
+}
+.favourites:hover .favourites1{
+    opacity: 100%;
+}
+.favourites1:hover{
+    display: none;
+}
+.about:hover .about1{
+    opacity: 100%;
+}
+.about1:hover{
+    display: none;
 }
 @media (max-width: 1024px){
     .skills{
-        border-radius: 0%;
         font-size: 0.4rem;
         width: calc(15vw);
         height: calc(70vw);
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: #576F72;
-        position: absolute;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
     }
     .hobbies{
-        width: calc(10vw);
-        height: calc(10vw);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
         margin-right: 0px;
         margin-bottom: 15px;
     }
     .education{
-        width: calc(10vw);
-        height: calc(10vw);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
         margin-bottom: 15px;
         margin-right: 0px;
     }
     .favourites{
-        width: calc(10vw);
-        height: calc(10vw);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
         margin-bottom: 15px;
         margin-right: 0px;
     }
     .about{
-        width: calc(10vw);
-        height: calc(10vw);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
         margin-right: 0px;
     }
     .hobbies1{
-        width: calc(13vw);
-        height: calc(13vw);
-        background-color: black;
         position: absolute;
-        top: calc(4vw);
-        left: calc(26.5vw);
-        border-radius: 10%;
+        top: calc(6vw);
+        left: calc(15vw);
+    }
+    .education1{
+        position: absolute;
+        top: calc(19.5vw);
+        left: calc(-15vw);
+    }
+    .favourites1{
+        position: absolute;
+        top: calc(33vw);
+        left: calc(15vw);
+    }
+    .about1{
+        position: absolute;
+        top: calc(46.5vw);
+        left: calc(-15vw);
     }
 }
