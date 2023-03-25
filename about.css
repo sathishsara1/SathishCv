@@ -78,7 +78,7 @@ a{
 }
 @media (max-width:1024px){
     .navbar{
-        font-size: calc(2.5vw);
+        font-size: calc(3vw);
     }
     #navchild-home{
         position: absolute;
@@ -109,6 +109,7 @@ a{
 .insta{
     width: 25px;
     height: 25px;
+    background-color: white;
     margin-bottom: calc(6vw);
     margin-top: calc(5vw);
 }
