@@ -2,16 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #CBE4DE;
 }
 .navbar{
     width: fit-content;
     height: fit-content;
-    font-size: 1.1em;
+    font-size: 1.7em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    font-family: 'Cookie', cursive;
 }
 #navchild-home{
     position: absolute;
@@ -144,18 +146,21 @@ a{
 .skills{
     width: calc(63vw);
     height: calc(13vw);
+    background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #576F72;
     position: absolute;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    border : 3px solid #609966;
+    box-shadow: 0px;
+    font-size: 1.7rem;
 }
 .hobbies{
     width: calc(10vw);
@@ -165,6 +170,10 @@ a{
     align-items: center;
     background-color: white;
     margin-right: 20px;
+    color: black;
+    text-shadow: 2px 2px 4px #609966;
+    border : 3px solid #609966;
+    font-family: 'Cookie', cursive;
 }
 .education{
     width: calc(10vw);
@@ -174,6 +183,9 @@ a{
     align-items: center;
     background-color: white;
     margin-right: 20px;
+    border : 3px solid #609966;
+    text-shadow: 2px 2px 4px #609966;
+    font-family: 'Cookie', cursive;
 }
 .favourites{
     width: calc(10vw);
@@ -183,6 +195,9 @@ a{
     align-items: center;
     background-color: white;
     margin-right: 20px;
+    border : 3px solid #609966;
+    text-shadow: 2px 2px 4px #609966;
+    font-family: 'Cookie', cursive;
 }
 .about{
     width: calc(10vw);
@@ -192,51 +207,65 @@ a{
     align-items: center;
     background-color: white;
     margin-right: 20px;
+    border : 3px solid #609966;
+    text-shadow: 2px 2px 4px #609966;
+    font-family: 'Cookie', cursive;
 }
 .hobbies1{
     width: calc(15vw);
     height: calc(15vw);
-    background-color: black;
+    background-color: white;
+    border : 3px solid ;
     position: absolute;
-    top: calc(-15vw);
+    top: calc(-15.2vw);
     left: calc(6.0vw);
     border-radius: 10%;
     opacity: 0;
     transition: all 500ms;
+    padding: 10px;
 }
 .education1{
     width: calc(15vw);
     height: calc(15vw);
-    background-color: blueviolet;
+    background-color: white;
+    border : 3px solid ;
     position: absolute;
-    top: calc(13vw);
+    top: calc(12.8vw);
     left: calc(17.0vw);
     border-radius: 10%;
     z-index: 2;
     opacity: 0%;
     transition: all 500ms;
+    padding: 10px;
 }
 .favourites1{
     width: calc(15vw);
     height: calc(15vw);
-    background-color: brown;
+    background-color: white;
+    border : 3px solid ;
     position: absolute;
-    top: calc(-15vw);
+    top: calc(-15.2vw);
     left: calc(30.0vw);
     border-radius: 10%;
     opacity: 0%;
     transition: all 500ms;
+    padding: 10px;
 }
 .about1{
     width: calc(15vw);
     height: calc(15vw);
-    background-color: chartreuse;
+    background-color: white;
+    border : 3px solid ;
     position: absolute;
-    top: calc(13vw);
+    top: calc(12.8vw);
     left: calc(41.0vw);
     border-radius: 10%;
     opacity: 0%;
     transition: all 500ms;
+    padding: 10px;
+}
+.hobbies:hover{
+    box-shadow: 0 0 3px 3px black;
 }
 .hobbies:hover .hobbies1{
     opacity: 100%;
@@ -244,17 +273,26 @@ a{
 .hobbies1:hover{
     display: none;
 }
+.education:hover{
+    box-shadow: 0 0 3px 3px black;
+}
 .education:hover .education1{
     opacity: 100%;
 }
 .education1:hover{
     display: none;
 }
+.favourites:hover{
+    box-shadow: 0 0 3px 3px black;
+}
 .favourites:hover .favourites1{
     opacity: 100%;
 }
 .favourites1:hover{
     display: none;
+}
+.about:hover{
+    box-shadow: 0 0 3px 3px black;
 }
 .about:hover .about1{
     opacity: 100%;
@@ -264,44 +302,60 @@ a{
 }
 @media (max-width: 1024px){
     .skills{
-        font-size: 0.4rem;
-        width: calc(15vw);
-        height: calc(70vw);
+        font-size: 0.9rem;
+        width: calc(40vw);
+        height: calc(120vw);
         flex-direction: column;
     }
     .hobbies{
         margin-right: 0px;
         margin-bottom: 15px;
+        width: calc(23vw);
+        height: calc(23vw);
     }
     .education{
         margin-bottom: 15px;
         margin-right: 0px;
+        width: calc(23vw);
+        height: calc(23vw);
     }
     .favourites{
         margin-bottom: 15px;
         margin-right: 0px;
+        width: calc(23vw);
+        height: calc(23vw);
     }
     .about{
         margin-right: 0px;
+        width: calc(23vw);
+        height: calc(23vw);
     }
     .hobbies1{
+        width: calc(30vw);
+        height: calc(30vw);
         position: absolute;
-        top: calc(6vw);
-        left: calc(15vw);
+        top: calc(4vw);
+        left: calc(31vw);
     }
     .education1{
+        width: calc(30vw);
+        height: calc(30vw);
         position: absolute;
-        top: calc(19.5vw);
-        left: calc(-15vw);
+        top: calc(30.5vw);
+        left: calc(-22.5vw);
     }
     .favourites1{
+        width: calc(30vw);
+        height: calc(30vw);
         position: absolute;
-        top: calc(33vw);
-        left: calc(15vw);
+        top: calc(57vw);
+        left: calc(31vw);
     }
     .about1{
+        width: calc(30vw);
+        height: calc(30vw);
         position: absolute;
-        top: calc(46.5vw);
-        left: calc(-15vw);
+        top: calc(84.8vw);
+        left: calc(-22.5vw);
     }
 }
